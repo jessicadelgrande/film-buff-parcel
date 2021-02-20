@@ -2,3 +2,6 @@ node_modules
 .cache
 dist
 keys.js
+dupe.js
+firebase.js
+style.css.map

@@ -1,0 +1,19 @@
+.filmItem {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(2n+1) {
+        background-color: #d3d3d3;
+    }
+}
+
+#filmName {
+    width: 50%;
+}
+
+#removeButton {
+    height: 40px;
+    width: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+}

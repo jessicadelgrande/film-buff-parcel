@@ -1,21 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>film buff parcel</title>
 
-  <title>film buff parcel</title>
-
-  
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Firebase CDN -->
-  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-  <!-- js -->
-  <script src="./app.js"></script>
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 
 <body>
 
+  <div class="wrapper">
+		<header id="main-header">
+        	<h1>film buff</h1>
+    	</header>
 
+		<main id="main">
+			<form id="filmForm" action="submit">
+				<label for="newFilmInput">Add a film to your library</label>
+				<input type="text" id="newFilmInput" />
+				<button id="addFilmButton"><i class="fa fa-film">Add a film</i></button>
+			</form>
+			<ul id="filmItemContainer">
+				<!-- dynamic content -->
+        		<!-- <li id="filmItem">
+					<p id="filmName"></p>
+					<p id="loggedDate"></p>
+				</li> -->
+			</ul>
+		</main>
+	</div>
+
+	<!-- scripts -->
+	<!-- <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script> -->
+	<script src="./app.js"></script>
+	<!-- end scripts -->
 </body>
-
 </html>
+
+
