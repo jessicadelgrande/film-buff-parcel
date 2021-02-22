@@ -1,6 +1,56 @@
+@font-face {
+    font-family: "Jean Luc Bold";
+    src: url("./fonts/jeanlucweb-bold.woff") format("woff");
+}
+$jeanluc-bold: "Jean Luc Bold", Arial, Helvetica, sans-serif;
+
+@font-face {
+    font-family: "GT Pressura Mono";
+    src: url("./fonts/GT-Pressura-Mono.otf") format("opentype");
+}
+$pressura: "GT Pressura Mono", 'Courier New', Courier, monospace;
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    font-family: $pressura;
+}
+
+h1 {
+    font-size: 4rem;
+    color: red;
+    font-family: $jeanluc-bold;
+}
+
+#addFilmButton {
+    height: 40px;
+    width: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: white;
+
+    &:hover {
+        background-color: red;
+
+        i {
+            color: white;
+        }
+    }
+
+    i {
+        color: red;
+    }
+}
+
+#filmItemContainer {
+    padding-left: 0;
+}
+
 .filmItem {
     display: flex;
     align-items: center;
+    padding: 0 16px;
 
     &:nth-child(2n+1) {
         background-color: #d3d3d3;
@@ -11,9 +61,24 @@
     width: 50%;
 }
 
-#removeButton {
+.removeButton {
     height: 40px;
     width: 40px;
     border: 1px solid red;
     border-radius: 50%;
+    margin-left: auto;
+    background-color: white;
+
+    &:hover {
+        background-color: red;
+
+        i {
+            color: white;
+        }
+    }
+
+    i {
+        color: red;
+        pointer-events: none;
+    }
 }
